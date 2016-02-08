@@ -1,0 +1,148 @@
+html,
+body {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   font-weight: 300;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 3rem;
+   color: #efbd62;
+}
+
+a {
+   text-decoration: none;
+   display: block;
+   color: #aaa;
+   font-size: 1rem;
+}
+
+.select-style {
+   padding: 0;
+   margin: 0;
+   margin-bottom: 1rem;
+   display: inline-block;
+   border-radius: .2rem;
+   overflow: hidden;
+   background-color: #fff;
+   background: #fff url('images/arrowdown.gif') no-repeat 90% 50%;
+}
+
+.select-style select {
+   padding: .5rem 2rem;
+   border: none;
+   box-shadow: none;
+   background-color: transparent;
+   background-image: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   font-size: .8rem;
+   font-family: 'Open Sans', sans-serif;
+   color: #777;
+}
+
+.select-style select:focus {
+   outline: none;
+}
+
+.clearfix {
+   clear: both;
+}
+
+.game-wrapper {
+   background: #eee;
+   min-width: 250px;
+   display: inline-block;
+   margin: 0 auto;
+   padding: 2rem;
+   border-radius: .2rem;
+   margin-bottom: 2rem;
+}
+
+.game-screen {
+   background: #fff;
+   padding: 1rem;
+   border-radius: .2rem;
+}
+
+.game-screen .game-header {
+   display: flex;
+   margin-bottom: 1rem;
+   color: #bbb;
+}
+
+.game-screen .game-header > div {
+   flex-grow: 1;
+}
+
+.game-screen .game-board {
+   margin-bottom: 1rem;
+}
+
+.game-screen .game-footer .game-restart-button {
+   border: 0;
+   background: #efbd62;
+   color: #846c3e;
+   border-radius: .2em;
+   padding: .5rem 2rem;
+   font-size: .9rem;
+   cursor: pointer;
+   outline: 0;
+}
+
+.zone {
+   background: #eee;
+   background-size: contain !important;
+   background-position: center center !important;
+   background-repeat: no-repeat !important;
+   width: 25px;
+   height: 25px;
+   line-height: 25px;
+   float: left;
+   text-align: center;
+   box-sizing: border-box;
+   display: inline-block;
+   border-radius: .2em;
+   margin: .2rem;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.zone.is-revelead {
+   background: #ddd;
+}
+
+.zone.is-mine {
+   background-image: url(images/mine.png);
+}
+
+.zone.is-mine.is-clicked {
+   background-color: #d44646;
+}
+
+.zone.is-flagged {
+   background: url(images/flag.png);
+}
+
+.zone.is-empty {
+   background: rgba(239, 189, 98, 0.27);
+}
+
+.zone.is-low {
+   color: #58a4de;
+}
+
+.zone.is-medium {
+   color: #52c5a7;
+}
+
+.zone.is-high {
+   color: #d44646;
+}
