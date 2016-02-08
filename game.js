@@ -83,7 +83,7 @@ Game.prototype.init = function() {
 }
 
 Game.prototype.isWin = function() {
-   return this.board.getNotReleavedZones().length == this.mineCount;
+   return this.board.getNotReleavedZones().length <= this.mineCount;
 }
 
 Game.prototype.gameover = function(isWin) {
