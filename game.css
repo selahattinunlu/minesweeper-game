@@ -115,7 +115,8 @@ a {
    cursor: pointer;
 }
 
-.zone.is-revelead {
+.zone.is-revealed,
+.zone:hover {
    background: #ddd;
 }
 
